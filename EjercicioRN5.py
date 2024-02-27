@@ -1,12 +1,10 @@
-class EjercicioRN4:
-  def main():
-    edJuan = 9
-    EDALBER = 2 * edJuan / 3
-    EDANA = 4 * edJuan / 3
-    EDMAMA = edJuan + EDALBER + EDANA
-    
-    print(
-        f"Las edades son: Juan {edJuan}, Alberto {EDALBER}, Ana {EDANA}, Mama {EDMAMA}"
-    )
+class EjercicioRN5:
+  SUMA = 0
+  X = 20
+  SUMA = SUMA + X
+  Y = 40
+  X = X + Y ** 2
+  SUMA = SUMA + X / Y
+  print(f"El valor de la suma es: {SUMA}")
 
-EjercicioRN4.main()
+EjercicioRN5.main()
