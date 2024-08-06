@@ -109,10 +109,10 @@ public class Ventana7 extends javax.swing.JFrame {
                return;
         }
         if(A > B){
-             res.setText("A es igual que B");
+             res.setText("A es mayor que B");
               return;
         }
-        res.setText("B es igual que A");
+        res.setText("B es mayor que A");
         
     }                                   
 
