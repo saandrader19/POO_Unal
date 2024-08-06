@@ -1,10 +1,9 @@
-package poo.Ejercicio7;
+package com.actividad3;
 
 public class Ejercicio7 {
-    
-    public static void main(String args[]) {
-        Numeros num = new Numeros();
-        
-        num.mayor();
+
+    public static void main(String[] args) {
+        Ventana7 ventana = new Ventana7();
+        ventana.show();
     }
 }
