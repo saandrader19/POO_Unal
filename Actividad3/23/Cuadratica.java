@@ -5,7 +5,6 @@ import javax.swing.JOptionPane;
 
 public class Cuadratica {
   double A, B, C;
-  double [] sol;
 
 public Cuadratica(double A, double B, double C){
   this.A = A;
@@ -19,22 +18,22 @@ public Cuadratica(double A, double B, double C){
     }
 
     // Método para calcular las raíces
-    public void calcularRaices() {
+    public String calcularRaices() {
         double discriminante = calcularDiscriminante();
 
         if (discriminante > 0) {
             // Dos raíces reales
             double raiz1 = (-B + Math.sqrt(discriminante)) / (2 * A);
             double raiz2 = (-B - Math.sqrt(discriminante)) / (2 * A);
-            System.out.println("Raíces reales: " + raiz1 + " y " + raiz2);
+            return "Raíces reales: " + raiz1 + " y " + raiz2;
         } else if (discriminante == 0) {
             // Una raíz real
             double raiz = -B / (2 * A);
-            System.out.println("Raíz única: " + raiz);
+            return "Raíz única: " + raiz;
         } else {
             // Raíces complejas
             double parteReal = -B / (2 * A);
             double parteImaginaria = Math.sqrt(-discriminante) / (2 * A);
-            System.out.println("Raíces complejas: " + parteReal + " ± " + parteImaginaria + "i");
+            return "Raíces complejas: " + parteReal + " ± " + parteImaginaria + "i";
         }
 }
